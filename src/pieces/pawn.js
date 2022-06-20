@@ -1,10 +1,10 @@
 import { isSameDiagonal } from '../validSpots/validDiagonals';
 import { Piece } from './piece';
 
-class Pawn extends Piece{
+export class Pawn extends Piece{
 
   constructor (color){
-    super(color, (color === "white" ? '/public/images/pawn_w.png' : '/public/images/pawn_b.png')) //verify
+    super(color, (color === "white" ? 'pawn_w.png' : 'pawn_b.png'), 'pawn') //verify
 
     this.startingPositions={
       white: [48, 50, 51, 52, 53, 54, 55],
